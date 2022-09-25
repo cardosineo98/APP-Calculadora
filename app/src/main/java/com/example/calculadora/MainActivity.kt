@@ -100,6 +100,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         } catch (e: NumberFormatException) {
 
         }
+
     }
 
     //Resetando a Calculadora
@@ -110,14 +111,18 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun realizarOperacao(num1: Float, num2: Float) {
-        this.num2 = binding.textVisor.text.toString().toFloat()
-        resultado = when (operacao) {
-            SOMA -> (num1 + this.num2)
-            SUBTRACAO -> (num1 - this.num2)
-            MULTIPLICACAO -> (num1 * this.num2)
-            DIVISAO -> (num1 / this.num2)
-            else -> 0.0f
+        if ((operacao == DIVISAO) && (num2 == 0f)) {
+            binding.textVisor.text = "Impossivel Dividir por zero"
+        } else {
+            this.num2 = binding.textVisor.text.toString().toFloat()
+            resultado = when (operacao) {
+                SOMA -> (num1 + this.num2)
+                SUBTRACAO -> (num1 - this.num2)
+                MULTIPLICACAO -> (num1 * this.num2)
+                DIVISAO -> (num1 / this.num2)
+                else -> 0.0f
+            }
+            binding.textVisor.text = resultado.toString()
         }
-        binding.textVisor.text = resultado.toString()
     }
 }
