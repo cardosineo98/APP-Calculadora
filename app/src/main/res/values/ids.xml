@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="text_num1" type="id" />
+    <item name="button_point" type="id" />
+    <item name="button_zero" type="id" />
+    <item name="button_igual" type="id" />
+    <item name="button_um" type="id" />
+    <item name="button_dois" type="id" />
+    <item name="button_tres" type="id" />
+    <item name="button_quatro" type="id" />
+    <item name="button_cinco" type="id" />
+    <item name="button_seis" type="id" />
+    <item name="button_sete" type="id" />
+    <item name="button_oito" type="id" />
+    <item name="button_nove" type="id" />
+    <item name="button_soma" type="id" />
+    <item name="button_subtracao" type="id" />
+    <item name="button_multiplicacao" type="id" />
+    <item name="button_divisao" type="id" />
+    <item name="button_del" type="id" />
+</resources>
